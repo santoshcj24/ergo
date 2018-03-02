@@ -71,10 +71,10 @@ export class MyApp {
 
         }
     });
-    this.codePush.sync().subscribe((syncStatus) => console.log(syncStatus));
+    // this.codePush.sync().subscribe((syncStatus) => console.log(syncStatus));
 
-const downloadProgress = (progress) => { console.log(`Downloaded ${progress.receivedBytes} of ${progress.totalBytes}`); }
-this.codePush.sync({}, downloadProgress).subscribe((syncStatus) => console.log(syncStatus));
+// const downloadProgress = (progress) => { console.log(`Downloaded ${progress.receivedBytes} of ${progress.totalBytes}`); }
+// this.codePush.sync({}, downloadProgress).subscribe((syncStatus) => console.log(syncStatus));
 
   }
 
