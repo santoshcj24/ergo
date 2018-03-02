@@ -1,0 +1,8 @@
+{
+  "name": "taskmanager",
+  "app_id": "0b671db4",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

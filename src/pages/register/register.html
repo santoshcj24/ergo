@@ -1,0 +1,105 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>SIGN UP</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content no-bounce padding>
+
+
+
+  <form [formGroup]="credentialsForm">
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input [formControl]="credentialsForm.controls['email']"
+          type="email"></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="!credentialsForm.controls.email.valid &&
+        credentialsForm.controls.email.dirty"
+        class="validator-error" style="color: #f53d3d;">
+      Please enter a valid email.
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input [formControl]="credentialsForm.controls['password']"
+          type="password"></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="!credentialsForm.controls.password.valid &&
+        credentialsForm.controls.password.dirty"
+        class="validator-error" style="color: #f53d3d;">
+      Please enter a valid password.
+    </ion-item>
+    <ion-item>
+      <ion-label floating>organisation</ion-label>
+      <ion-input [formControl]="credentialsForm.controls['organisation']"
+          type="text"></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="!credentialsForm.controls.organisation.valid &&
+        credentialsForm.controls.organisation.dirty"
+        class="validator-error" style="color: #f53d3d;">
+     This field is required.
+    </ion-item>
+    <ion-item>
+      <ion-label floating>users_no</ion-label>
+      <ion-input [formControl]="credentialsForm.controls['users_no']"
+          type="number"></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="!credentialsForm.controls.users_no.valid &&
+        credentialsForm.controls.users_no.dirty"
+        class="validator-error" style="color: #f53d3d;">
+     This field is required.
+     
+    </ion-item>
+    <ion-item>
+      <ion-label floating>phone</ion-label>
+      <ion-input [formControl]="credentialsForm.controls['phone']"
+          type="number"></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="!credentialsForm.controls.phone.valid &&
+        credentialsForm.controls.phone.dirty"
+        class="validator-error" style="color: #f53d3d;">
+      Please enter a valid Phone number.
+    </ion-item>
+    <ion-item>
+      <ion-label floating>designation</ion-label>
+      <ion-input [formControl]="credentialsForm.controls['designation']"
+          type="text"></ion-input>
+    </ion-item>
+
+    <ion-item *ngIf="!credentialsForm.controls.designation.valid &&
+        credentialsForm.controls.designation.dirty"
+        class="validator-error" style="color: #f53d3d;">
+     This field is required.
+      
+    </ion-item>
+
+    <ion-row class="sign-in-button-container">
+      <ion-col text-center>
+        <button ion-button block color="#00adda"
+            [disabled]="!credentialsForm.valid" (click)="onSignIn()">
+          Sign Up
+        </button>
+      </ion-col>
+    </ion-row>
+
+   <!--  <ion-row>
+      <ion-col text-center>
+        <button ion-button clear color="light"
+            (click)="onForgotPassword()">
+          Forgot your password?
+        </button>
+      </ion-col>
+    </ion-row> -->
+
+  </form>
+
+</ion-content>
