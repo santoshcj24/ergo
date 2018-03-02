@@ -40,6 +40,7 @@
     "cordova-plugin-code-push": "^1.11.7",
     "cordova-plugin-device": "^2.0.1",
     "cordova-plugin-dialogs": "^2.0.1",
+    "cordova-plugin-ionic": "^4.0.0",
     "cordova-plugin-x-toast": "^2.6.0",
     "cordova-sqlite-storage": "^2.2.1",
     "ionic-angular": "3.9.2",
@@ -61,7 +62,15 @@
       "cordova-hot-code-push-plugin": {},
       "cordova-plugin-appcenter-analytics": {},
       "cordova-plugin-appcenter-crashes": {},
-      "cordova-hot-code-push-local-dev-addon": {}
+      "cordova-hot-code-push-local-dev-addon": {},
+      "cordova-plugin-ionic": {
+        "APP_ID": "0b671db4",
+        "CHANNEL_NAME": "Master",
+        "UPDATE_METHOD": "background",
+        "WARN_DEBUG": "true",
+        "UPDATE_API": "https://api.ionicjs.com",
+        "MAX_STORE": "2"
+      }
     }
   }
 }
